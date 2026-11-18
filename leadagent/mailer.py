@@ -15,7 +15,7 @@ def footer() -> str:
     return (
         "\n\n--\n"
         "{signature}\n"
-        "P Designs | pdesigns.com.au | " + config.SENDER_EMAIL + "\n"
+        "PE Designs | " + config.SENDER_EMAIL.split("@")[-1] + " | " + config.SENDER_EMAIL + "\n"
         "You're receiving this because your contact details are published in connection with your role. "
         "If you'd rather not hear from us, reply \"unsubscribe\" and we won't contact you again."
     )
@@ -26,7 +26,7 @@ def signature() -> str:
     for line in config.business_profile().splitlines():
         if "Sender name" in line and ":" in line:
             return line.split(":", 1)[1].strip()
-    return "P Designs"
+    return "PE Designs"
 
 
 def _token() -> str:

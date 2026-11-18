@@ -18,7 +18,7 @@ def _csrf():
 
 
 BASE = """<!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1"><title>P Designs leads</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>PE Designs leads</title>
 <style>
 :root{--bg:#f6f7f9;--card:#fff;--ink:#1d2330;--mute:#5d6678;--line:#dfe3ea;--accent:#1f5fbf;--ok:#1d7a46;--warn:#a5531a}
 @media (prefers-color-scheme:dark){:root{--bg:#14171c;--card:#1d2128;--ink:#e6e9ef;--mute:#9aa3b2;--line:#2e343e;--accent:#6ea2ff;--ok:#5cc28a;--warn:#e39a5f}}
@@ -33,7 +33,7 @@ button.primary{background:var(--accent);color:#fff;border-color:var(--accent)}.r
 .flash{padding:10px;border-radius:6px;border:1px solid var(--line);background:var(--card);margin-bottom:12px}
 table{width:100%;border-collapse:collapse}td,th{padding:6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
 details summary{cursor:pointer;color:var(--mute)}ul{padding-left:20px;margin:6px 0}.mode{color:var(--warn);font-weight:600}
-</style></head><body><header><b>P Designs · Lead assistant</b>
+</style></head><body><header><b>PE Designs · Lead assistant</b>
 <a href="{{ url_for('queue') }}">Review queue</a><a href="{{ url_for('companies') }}">Companies</a>
 <a href="{{ url_for('dnc') }}">Do not contact</a>
 <span class="mode">{{ 'DRY RUN' if mode != 'graph' else 'LIVE: sending from ' + sender }}</span></header><main>

@@ -1,17 +1,17 @@
-# P Designs — business profile
+# PE Designs — business profile
 
 The agent reads this file before every piece of research and every draft.
 Edit it freely: the more accurate it is, the better the emails.
 Anything in [square brackets] is a placeholder. Fill it in or delete it.
 
 ## Who we are
-- Business name: P Designs
+- Business name: PE Designs
 - Website: pdesigns.com.au
 - Contact for outreach: admin@pdesigns.com.au
 - Phone: [04xx xxx xxx]
 - ABN: [xx xxx xxx xxx]
 - Location / service area: [City, State], supplying [Australia-wide / your state]
-- Sender name to sign emails with: [Your name], [Your title], P Designs
+- Sender name to sign emails with: [Your name], [Your title], PE Designs
 
 ## What we make
 - Engraved traffolyte labels (switchboard, MCC, distribution board and control panel labels)

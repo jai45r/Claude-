@@ -1,15 +1,15 @@
-# P Designs: lead generation assistant
+# PE Designs: lead generation assistant
 
 An AI research assistant that finds companies likely to need **traffolyte labels and electrical signage**.
 These are switchboard builders, electrical contractors, panel builders and head contractors. For each one it:
 
 1. reads the company's website and searches for current projects, tenders, contract wins and job ads
-2. decides honestly whether P Designs can help (fit score 1–5, with the evidence)
+2. decides honestly whether PE Designs can help (fit score 1–5, with the evidence)
 3. finds the right person (procurement, estimating, production or project manager, or the owner at a small firm)
 4. writes a short, specific email and a LinkedIn connection note
 
 **Nothing is sent without your OK.** You open a local dashboard, read the research, edit the draft and press
-**Send**. LinkedIn notes are copied and sent by you, so the P Designs LinkedIn account is never logged into by a bot.
+**Send**. LinkedIn notes are copied and sent by you, so the PE Designs LinkedIn account is never logged into by a bot.
 
 ## How a week looks
 
@@ -45,7 +45,7 @@ You can also import a list of tier-1 companies you already know: make a CSV with
 The app sends through Microsoft Graph, not a password. Microsoft has switched off basic password sign-in for
 SMTP, and Graph is the supported way to send. Whoever administers your Microsoft 365 does this once:
 
-1. Go to entra.microsoft.com → **App registrations → New registration** and name it "P Designs lead assistant".
+1. Go to entra.microsoft.com → **App registrations → New registration** and name it "PE Designs lead assistant".
 2. **API permissions → Add → Microsoft Graph → Application permissions**, then add `Mail.Send` and `Mail.Read`.
    Then click **Grant admin consent**.
 3. **Certificates & secrets → New client secret.** Copy the value.
@@ -64,7 +64,7 @@ These rules are built in, not left to good intentions:
 - **Consent:** the agent only uses email addresses **published** on a web page, and saves the page so you can check it.
   It never guesses addresses like firstname.lastname@. It only targets people whose role relates to buying labels or
   running projects, which is the basis for "inferred consent" for B2B email in Australia.
-- **Identify:** every email gets a footer with your name, P Designs and how to reach you.
+- **Identify:** every email gets a footer with your name, PE Designs and how to reach you.
 - **Unsubscribe:** every email says "reply unsubscribe". `check-replies` puts anyone who replies
   unsubscribe, stop or "not interested" on the do-not-contact list automatically. The law requires opt-outs to be
   honoured within 5 business days, so run `check-replies` at least twice a week.
@@ -86,7 +86,7 @@ spend limit in the Anthropic console.
 
 | Path | What it is |
 |---|---|
-| `config/business_profile.md` | What P Designs sells and who it's for. **Edit this.** |
+| `config/business_profile.md` | What PE Designs sells and who it's for. **Edit this.** |
 | `leadagent/agent.py` | The research agent: prompts, rules and what it saves |
 | `leadagent/web.py` | The review dashboard |
 | `leadagent/mailer.py` | Microsoft 365 sending, reply and opt-out checking, footer |

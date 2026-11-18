@@ -27,7 +27,7 @@ RULES = """
 
 Honesty
 - Only state facts you found in a source during this research. Never invent projects, people, emails or claims.
-- Never claim P Designs has worked with a company, or has capabilities, unless the business profile says so.
+- Never claim PE Designs has worked with a company, or has capabilities, unless the business profile says so.
 
 Contacts and privacy (Australian Spam Act 2003 + Privacy Act)
 - Only record an email address that is published on a web page you saw (the company's website, a directory,
@@ -43,7 +43,7 @@ Contacts and privacy (Australian Spam Act 2003 + Privacy Act)
 Writing
 - First email: under 120 words, plain text, no emojis, no hype, no "I hope this email finds you well".
 - Open with one specific, true detail about their work (a project, product line, expansion, tender, hire).
-- Then one sentence on how P Designs specifically helps with that. Then ONE low-effort question.
+- Then one sentence on how PE Designs specifically helps with that. Then ONE low-effort question.
 - Do NOT write a signature, address or unsubscribe line - the system adds these.
 - LinkedIn connection note: under 280 characters, friendly, specific, no pitch-dump.
 """
@@ -51,7 +51,7 @@ Writing
 
 def _system(job_instructions: str) -> list:
     text = (
-        "You are the business-development research assistant for P Designs, an Australian maker of "
+        "You are the business-development research assistant for PE Designs, an Australian maker of "
         "engraved traffolyte labels and electrical signage. You work for the owner. Your job is careful, "
         "useful research and genuinely relevant outreach, never spam. A wrong or creepy email costs us "
         "more than a missed lead, so when in doubt, say it is not a fit.\n\n"
@@ -149,7 +149,7 @@ RESEARCH_TOOL = {
     }),
 }
 
-RESEARCH_JOB = f"""Research ONE company (given by the user) and decide whether P Designs can genuinely help them.
+RESEARCH_JOB = f"""Research ONE company (given by the user) and decide whether PE Designs can genuinely help them.
 Today is {date.today().isoformat()}.
 
 1. Read their website: what they build, sectors, locations, size, recent news/projects.

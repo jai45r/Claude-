@@ -1,4 +1,4 @@
-"""Command line for the P Designs lead agent.
+"""Command line for the PE Designs lead agent.
 
     python -m leadagent add "Company name" --website https://... [--location "Melbourne VIC"] [--notes "..."]
     python -m leadagent import companies.csv          # columns: name, website, location, notes
@@ -118,7 +118,7 @@ def cmd_dashboard(a):
 
 def main():
     db.init()
-    p = argparse.ArgumentParser(prog="leadagent", description="P Designs lead generation assistant")
+    p = argparse.ArgumentParser(prog="leadagent", description="PE Designs lead generation assistant")
     sub = p.add_subparsers(dest="cmd", required=True)
     s = sub.add_parser("add", help="add a company you already know about")
     s.add_argument("name"); s.add_argument("--website"); s.add_argument("--location"); s.add_argument("--notes")
